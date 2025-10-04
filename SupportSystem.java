@@ -44,7 +44,7 @@ public class SupportSystem
 
             if(input.contains("bye")) {
                 System.out.println("Goodbye!");
-                counter.printWordCounts();
+                counter.printWordCountsExclude(responder.getResponseMap());
                 finished = true;
             }
             else {

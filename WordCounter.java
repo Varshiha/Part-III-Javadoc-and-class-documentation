@@ -32,11 +32,12 @@ public class WordCounter
         }
     }
     
-    public void printWordCounts(){
-        System.out.println("Word usage count:");
+    public void printWordCountsExclude(HashMap<String, String> excludeMap){
+        System.out.println("Word usage count(excluding the keys in the responseMap):");
         for (String word : counts.keySet()){
+            if(!excludeMap.containsKey(word)){
              int count = counts.get(word);
              System.out.println(word + ": " + count);
-        }
+        }}
     }
 }
