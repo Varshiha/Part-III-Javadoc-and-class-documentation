@@ -43,6 +43,8 @@ public class SupportSystem
             HashSet<String> input = reader.getInput();
 
             if(input.contains("bye")) {
+                System.out.println("Goodbye!");
+                counter.printWordCounts();
                 finished = true;
             }
             else {
